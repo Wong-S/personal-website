@@ -6,9 +6,21 @@
     </head>
     <body>
         <h1>My Contact Details</h1>
-        <p>Email: sarah.wong135@gmail.com</p>
         <p>Linkedln: <a href = "http://www.linkedin.com/in/wong-s">wong-s</a> </p>
         <p>Github: <a href = "https://github.com/Wong-S">Wong-S</a></p>
 
+
+        <form action="mailto:sarah.wong135@gmail.com" method="post" enctype="text/plain">
+            <label>Your Name:</label>
+            <input type="text" name="user-name">
+            <br>
+            <label>Your Email:</label>
+            <input type="email" name = "user-email">
+            <br>
+            <label>Your Message:</label><br>
+            <textarea name="user-message" rows="10" cols="30"></textarea>
+            <input type="submit">
+        </form>
+            
     </body>
 </html>
