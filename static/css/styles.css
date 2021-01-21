@@ -16,19 +16,25 @@ hr {
   font-family: "Sacramento", cursive;
   font-size: 100px;
   color: #f58634;
+  margin: 0px;
 }
 
-h1 {
+/* h1 {
   color: #214151;
+  font-size: 20%;
+} */
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  color: #83a95c;
+  text-emphasis: italic;
 }
 
 h3 {
   color: #5eaaa8;
   font-family: "Montserrat", sans-serif;
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }
 
 .top-container {
@@ -37,19 +43,20 @@ h2 {
 
 .cloud-1 {
   height: 10%;
-  width: 15%;
-  margin-left: 300px;
+  width: 35%;
+  margin-left: 550px;
+  padding-bottom: 0px;
 }
 
-.cloud-2 {
+/* .cloud-2 {
   height: 10%;
-  width: 10%;
-}
+  width: 20%;
+} */
 
 .cloud-3 {
   height: 10%;
-  width: 15%;
-  margin-right: 300px;
+  width: 25%;
+  margin-right: 400px;
 }
 
 /* .air-balloon {
@@ -61,6 +68,7 @@ h2 {
 
 .mountain {
   text-align: center;
+  width: 60%;
 }
 
 #profile-pic {
@@ -88,11 +96,15 @@ h2 {
 }
 
 .contact-pic {
+  text-align: center;
   width: 15%;
   height: 15%;
   background-size: contain;
+  /* width: 15%;
+  height: 15%;
+  background-size: contain; */
 }
 
-table {
+/* table {
   text-align: left;
-}
+} */
