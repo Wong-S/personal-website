@@ -16,7 +16,7 @@ Thumbs.db
 secrets.sh
 env
 env/
-img/
+
 *.jpg
 *.gif
 *.png
