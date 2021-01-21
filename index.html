@@ -2,36 +2,138 @@
 <html>
     <head>
         <meta charset = "utf-8">
-        <title>Sarah's Personal Site</title>
+        <title>Sarah Wong</title>
+
+        <link rel="stylesheet" href="static/css/styles.css">
+        <link rel="icon" href="static/img/favicon.ico">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        <img src = "https://media-exp1.licdn.com/dms/image/C4E35AQH4g24PYBPbHw/profile-framedphoto-shrink_200_200/0/1607652312079?e=1611097200&v=beta&t=TP4rlpZTOnAXCenlYfEpudHTNHpcUMoo1UKHP4zL-6Q" alt="sarah profile picture">
-        <h1>Sarah Wong</h1>
-        <p><em>Recent Software Engineer Grad </em></p>
-        <p>I am a former biological scientist transitioning into Software Engineering</p>
-        <hr>
+        <div>
+            <img class= "cloud-1" src = "static/img/cloudy.svg" alt ="cloud-img">
+            <!-- <img class = "cloud-2" src = "static/img/clouds (1).svg" alt ="cloud-img"> -->
+        </div>
 
-        <h3>Projects</h3>
-            <ul>
-                <li><a href = "https://github.com/Wong-S/sleep-project">Optium Time</a></li>
-                <li><a href = "https://github.com/Wong-S/pizza-project">Picasso's Pizzeria</a></li>
-                <li><a href = "https://github.com/Wong-S/mintbean-Goals-Project">Goal Tracker App</a></li>
-            </ul>
-
-        <h3>Education</h3>
-            <ul>
-                <li>Hackbright Academy -- <em>Software Engineering Fellowship</em></li>
-                <li>University of Texas at Austin -- <em>Biology B.S. - Ecology, Evolution, Behavioral Science</em>
-                </li>
-            </ul>
+        <div>
+        </div>
         
-        <h3>Hobbies</h3>
-            <ol>
-                <li>Wood Working</li>
-                <li>Crocheting</li>
-                <li>Gardening</li>
-            </ol>
+        <!-- <img src = "https://media-exp1.licdn.com/dms/image/C4E35AQH4g24PYBPbHw/profile-framedphoto-shrink_200_200/0/1607652312079?e=1611097200&v=beta&t=TP4rlpZTOnAXCenlYfEpudHTNHpcUMoo1UKHP4zL-6Q" alt="sarah profile picture"> -->
+        <div class = "top-container">
+            <h1 id="name">I'm Sarah</h1>
+            <div>
+                <img class="cloud-3" src = "static/img/cloudy.svg" alt ="cloud-img">
 
-        <a href = "contact-info.html">Contact Info</a>
+            </div>
+
+            <!-- <img class = "air-balloon" src= "static/img/hot-air-balloon.svg" alt="balloon-img"> -->
+
+            <img class = "mountain" src="static/img/adventure.svg" alt="mountain-img">
+            <p><em>Aspiring Software Developer </em></p>
+        </div>
+        
+        <div class="middle-container">
+  <div class="profile">
+    <img id = "profile-pic" src="static/img/circle-cropped.png" alt="profile-picture">
+    <h2>About Me</h2>
+    <p>I am a former biological scientist transitioning into Software Engineering. Born and raised in Texas, I started my self-learning programming journey when Covid hit. At the time, I was not satisfied with where my life was and when the world seemed to turn upside down, my friend suggested I look into programming due to the exciting growth and opportunities. I was hesitant, but decided to do some self-reflection and self-learning to try something new in addition to my science background. Since then, I realized how enjoyable building and creating a project was from (sometimes) just a few lines of code. 
+      The journey has not all been smooth sailing, but I am embracing every obstacle, language, and bug that comes my way. Sometimes I cannot believe that I attended an accelerated software engineering fellowship at Hackbright Academy for 12 weeks and graduated this past December 2020. My programming journey has only just begun and I cannot wait to see where I will go from here and in the future. 
+      Please feel free to connect with my on social media or contact me for more information.
+       </p>
+  </div>
+  <hr>
+
+  <div class="projects">
+    <h2>Projects</h2>
+    <div class="project-row">
+      <img class="project-pic" src="static/img/project.svg" alt="project-pic">
+      <h3><a href = "https://github.com/Wong-S/sleep-project">Optium Time</a></h3>
+      <p>A Flask web application that allows the user to wind down before bed by journaling and setting a Moment.js alarm clock. The user also sees a graphical display of their  logged total hours slept per week/month  and NREM/REM stages using Chart.js. The Youtube Data API allows the user to query and search for videos with specific ambient sounds to act as an aide for their sleep routine. The user can use the app’s Twilio API feature to notify the user’s total sleep cycles from that night.</p>
+      <!-- <table>
+
+        <tr>
+          <th scope="row"> <strong>Languages:</strong></th>
+          <td>Python, JavaScript (AJAX, JSON), HTML, CSS, SQL
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row"> <strong>Frameworks & Libraries:</strong></th>
+          <td> Flask, jQuery, React.js, Bootstrap, Jinja, Chart.js, Moment.js, Twilio API, Youtube API
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row"> <strong>Database & Industry Tools:</strong></th>
+          <td>SQL( PostgreSQL) , ORM (SQLAlchemy), Vagrant,  Git/GitHub
+          </td>
+        </tr>
+
+      </table> -->
+    </div>
+    <div class="project-row">
+      <img class="" src="" alt="">
+      <h3><a href = "https://github.com/Wong-S/pizza-project">Picasso's Pizzeria</a></h3>
+      <p>A build-your-own terminal-based pizza game with the story and animation created using Python 3 and Turtle graphics.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="current-projects">
+    <h2>Ongoing Projects</h2>
+    <div class="current-project-row">
+      <img class="current-project" src="static/img/thinking.svg" alt="current-project-pic">
+      <h3><a href = "https://github.com/Wong-S/mintbean-Goals-Project">Goal Tracker App</a></h3>
+      <p>A collaborative project created during Mintbean.io January hackathon.</p>
+    </div>
+    <!-- <div class="current-project-row">
+      <img class="" src="" alt="">
+      <h3>Lorem Ipsum Dolor</h3>
+      <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+    </div>
+  </div> -->
+  <hr>
+  <div class="skills">
+    <h2>My Skills.</h2>
+    <div class="skill-row">
+      <img class="skills-pic" src="static/img/pen.svg" alt="skill-picture">
+      <h3>Languages</h3>
+      <p>Python, JavaScript (AJAX, JSON), HTML, CSS</p>
+    </div>
+    <div class="skill-row">
+      <img class="" src="" alt="">
+      <h3>Frameworks & Libraries</h3>
+      <p>Flask, jQuery, React.js, Bootstrap, Jinja, Chart.js, Moment.js, Twilio API, Youtube API</p>
+    </div>
+    <div class="skill-row">
+      <img class="" src="" alt="">
+      <h3>Database & Industry Tools</h3>
+      <p>SQL( PostgreSQL) , ORM (SQLAlchemy), Vagrant,  Git/GitHub</p>
+    </div>
+  </div>
+  <hr>
+  <div class="contact-me">
+    <img class = "contact-pic" src="static/img/email.svg" alt="contact-picture">
+    <h2>Get In Touch</h2>
+    <!-- <h3>Lorem ipsum dolor sit amet, non elit.</h3> -->
+    <!-- <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p> -->
+    <a class="btn" href="mailto:swong3310@gmail.com">CONTACT ME</a>
+    
+  </div>
+</div>
+
+
+<div class="bottom-container">
+  <br>
+  <a class="footer-link" href="http://www.linkedin.com/in/wong-s">LinkedIn</a>
+  <!-- <a class="footer-link" href="https://twitter.com/">Twitter</a> -->
+  <a class="footer-link" href="https://github.com/Wong-S">Github</a>
+  <p>© 2020 Sarah</p>
+</div>
+
+        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
     </body>
 </html>
