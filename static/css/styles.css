@@ -17,7 +17,25 @@ hr {
   font-family: "Sacramento", cursive;
   font-size: 100px;
   color: #f58634;
-  margin: 0px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+p {
+  text-align: center;
+}
+
+.navbar-brand {
+  font-family: "Cutive Mono";
+}
+
+.nav-link {
+  font-family: "Cutive Mono";
+}
+
+.rounded {
+  width: 3%;
+  text-align: center;
 }
 
 /* h1 {
@@ -42,45 +60,15 @@ h3 {
   background-color: #eff7e1;
 }
 
-.cloud-1 {
-  height: 10%;
-  width: 35%;
-  margin-left: 550px;
-  padding-bottom: 0px;
-}
-
-/* .cloud-2 {
-  height: 10%;
-  width: 20%;
-} */
-
-.cloud-3 {
-  height: 10%;
-  width: 25%;
-  margin-right: 400px;
-}
-
-/* .air-balloon {
-  height: 10%;
-  width: 10%;
-
-  margin-left: 520px;
-} */
-
-.mountain {
-  text-align: center;
-  width: 60%;
-}
-
 #profile-pic {
-  width: 15%;
-  height: 15%;
+  width: 120%;
+  height: 40%;
   background-size: contain;
 }
 
 .project-pic {
-  width: 15%;
-  height: 15%;
+  width: 150%;
+  height: 50%;
   background-size: contain;
 }
 
@@ -101,11 +89,12 @@ h3 {
   width: 15%;
   height: 15%;
   background-size: contain;
-  /* width: 15%;
-  height: 15%;
-  background-size: contain; */
 }
 
-/* table {
-  text-align: left;
-} */
+#footer-freepik {
+  font-size: small;
+}
+
+#copyright {
+  font-size: small;
+}
