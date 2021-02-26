@@ -4,7 +4,7 @@
         <meta charset = "utf-8">
         <title>Sarah Wong</title>
 
-        <link rel="stylesheet" href="static/css/styles.css">
+        
         <link rel="icon" href="static/img/favicon.ico">
 
         <!-- fonts -->
@@ -19,12 +19,14 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
       
+        <!-- CSS Styles -->
+        <link rel="stylesheet" href="static/css/styles.css">
     </head>
-    <body>
+    <body id="homepage">
 
       
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/HTML-Personal-Site/about.html">Sarah Wong</a>
+  <a class="navbar-brand" href="about.html">Sarah Wong</a>
   
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,27 +38,24 @@
 
         <div id = "top-nav-bar">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home •</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
         </div>
         <li class="nav-item active">
-          <a class="nav-link" href="about.html">About •</a>
+          <a class="nav-link" href="about.html">About</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="projects.html">Projects •</a>
+          <a class="nav-link" href="projects.html">Projects</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="resume.html">Resume •</a>
+          <a class="nav-link" href="resume.html">Resume</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link" href="/video-playlist/{{user_id}}">Playlist/Videos</a>
         </li> -->
         <li class="nav-item active">
-          <a class="nav-link " href="contact-info.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Contact
-          </a>
-
-      </li>
+          <a class="nav-link" href="contact-info.html">Contact</a>
+        </li>
 
 
 
@@ -65,19 +64,27 @@
 </nav>
 
 
-        <div>
-        </div>
+  
         
-        <div class="container">
+        <div class="container" id="index-container">
           <div class="row">
+            <div class="col-sm-8"><img class= "cloud-1" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDEyOCAxMjgiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PGc+PHBhdGggZD0ibTQ3LjMxIDcxLjA1N2MuMTIgMCAuMjM2LjAxNC4zNTUuMDE4YTIxLjA3MyAyMS4wNzMgMCAwIDEgNDAuNjU0LTcuNDQ0IDE2LjQ0IDE2LjQ0IDAgMCAxIDI2LjQ1MSA3LjQ2OWMuMjUzLS4wMTguNTA1LS4wMzguNzYyLS4wMzhhMTAuNzE5IDEwLjcxOSAwIDAgMSAwIDIxLjQzN2gtNjguMjIyYTEwLjcxOSAxMC43MTkgMCAwIDEgMC0yMS40Mzd6IiBmaWxsPSIjYmVlYmZhIi8+PHBhdGggZD0ibTExLjQ3MSA1NC4zYy4yMzMgMCAuNDYxLjAxOS42OS4wMzVhMTQuOTA4IDE0LjkwOCAwIDAgMSAyMy45ODktNi43NzQgMTkuMTA3IDE5LjEwNyAwIDAgMSAzNi40NjMgMy4xNSAyMS4wMTggMjEuMDE4IDAgMCAwIC0yNC45NDggMjAuMzY0Yy0uMTE5IDAtLjIzNS0uMDE4LS4zNTUtLjAxOGExMC42NjMgMTAuNjYzIDAgMCAwIC03LjA3MyAyLjY3OWgtMjguNzY2YTkuNzIxIDkuNzIxIDAgMSAxIDAtMTkuNDQxeiIgZmlsbD0iIzllZTJmOCIvPjwvZz48Zz48cGF0aCBkPSJtMTE1LjUzMSA2OS4zMDdhMS43NSAxLjc1IDAgMCAwIDAgMy41IDguOTY4IDguOTY4IDAgMSAxIDAgMTcuOTM2aC02OC4yMjFhOC45NjYgOC45NjYgMCAxIDEgLjA3LTE3LjkzMmguMDFsLjIxNy4wMTNhMS43MjIgMS43MjIgMCAwIDAgMS4yNjUtLjQ4MSAxLjc1NCAxLjc1NCAwIDAgMCAuNTQzLTEuMjQgMTkuMjg2IDE5LjI4NiAwIDAgMSAyMi44MjEtMTguNjg2bC4wODMuMDE2YTE5LjIxMSAxOS4yMTEgMCAwIDEgMTQuMzczIDExLjg0NSAxLjc1IDEuNzUgMCAwIDAgMi43NzQuNjc1IDE0LjY4NiAxNC42ODYgMCAwIDEgOS42MjMtMy42IDEuNzUgMS43NSAwIDAgMCAwLTMuNSAxOC4xODIgMTguMTgyIDAgMCAwIC0xMC4wODkgMy4wNjEgMjIuNjYgMjIuNjYgMCAwIDAgLTE0Ljk2NS0xMS43IDIwLjg0NiAyMC44NDYgMCAwIDAgLTM4LjU2NS00LjM1NCAxNi42NjMgMTYuNjYzIDAgMCAwIC0yNC41MzEgNy43IDExLjQ3MSAxMS40NzEgMCAwIDAgLjUzMiAyMi45MjkgMS43NSAxLjc1IDAgMSAwIDAtMy41IDcuOTcxIDcuOTcxIDAgMSAxIDAtMTUuOTQxYy4xNjggMCAuMzMzLjAxNC41NjMuMDNhMS43NDkgMS43NDkgMCAwIDAgMS44LTEuMjE5IDEzLjE1OSAxMy4xNTkgMCAwIDEgMjEuMTY2LTUuOTc3IDEuNzUgMS43NSAwIDAgMCAyLjc3My0uNjc0IDE3LjM0NyAxNy4zNDcgMCAwIDEgMzIuNDE0LjQzMmMtLjQ4Mi0uMDMtLjk2OC0uMDUtMS40NTctLjA1YTIyLjkzNiAyMi45MzYgMCAwIDAgLTIyLjczIDIwLjc4NSAxMi40NjggMTIuNDY4IDAgMCAwIDEuMzEgMjQuODY4aDY4LjIyMWExMi40NjggMTIuNDY4IDAgMSAwIDAtMjQuOTM2eiIvPjxwYXRoIGQ9Im0yOC4xMjUgNzEuOTg2aC00LjU0M2ExLjc1IDEuNzUgMCAwIDAgMCAzLjVoNC41NDNhMS43NSAxLjc1IDAgMCAwIDAtMy41eiIvPjwvZz48L2c+PC9zdmc+" alt ="cloud-img"/></div>
+            <div class="col-sm-4"></div>
+          </div>
+          <div class="row" id="index-row-container">
    
             <div class="col-12"><h1 id="name">I'm Sarah</h1>
-              <p id = "hori-line">________________________________</p>
+              <p id = "hori-line">___________________________________</p>
               <p id = "name-goal"><em>Aspiring Software Developer </em></p></div>
       
             </div>
           
 
+        </div>
+
+        <div class="row">
+          <div class="col-sm-8"><img class= "cloud-2" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDEyOCAxMjgiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PGc+PHBhdGggZD0ibTQ3LjMxIDcxLjA1N2MuMTIgMCAuMjM2LjAxNC4zNTUuMDE4YTIxLjA3MyAyMS4wNzMgMCAwIDEgNDAuNjU0LTcuNDQ0IDE2LjQ0IDE2LjQ0IDAgMCAxIDI2LjQ1MSA3LjQ2OWMuMjUzLS4wMTguNTA1LS4wMzguNzYyLS4wMzhhMTAuNzE5IDEwLjcxOSAwIDAgMSAwIDIxLjQzN2gtNjguMjIyYTEwLjcxOSAxMC43MTkgMCAwIDEgMC0yMS40Mzd6IiBmaWxsPSIjYmVlYmZhIi8+PHBhdGggZD0ibTExLjQ3MSA1NC4zYy4yMzMgMCAuNDYxLjAxOS42OS4wMzVhMTQuOTA4IDE0LjkwOCAwIDAgMSAyMy45ODktNi43NzQgMTkuMTA3IDE5LjEwNyAwIDAgMSAzNi40NjMgMy4xNSAyMS4wMTggMjEuMDE4IDAgMCAwIC0yNC45NDggMjAuMzY0Yy0uMTE5IDAtLjIzNS0uMDE4LS4zNTUtLjAxOGExMC42NjMgMTAuNjYzIDAgMCAwIC03LjA3MyAyLjY3OWgtMjguNzY2YTkuNzIxIDkuNzIxIDAgMSAxIDAtMTkuNDQxeiIgZmlsbD0iIzllZTJmOCIvPjwvZz48Zz48cGF0aCBkPSJtMTE1LjUzMSA2OS4zMDdhMS43NSAxLjc1IDAgMCAwIDAgMy41IDguOTY4IDguOTY4IDAgMSAxIDAgMTcuOTM2aC02OC4yMjFhOC45NjYgOC45NjYgMCAxIDEgLjA3LTE3LjkzMmguMDFsLjIxNy4wMTNhMS43MjIgMS43MjIgMCAwIDAgMS4yNjUtLjQ4MSAxLjc1NCAxLjc1NCAwIDAgMCAuNTQzLTEuMjQgMTkuMjg2IDE5LjI4NiAwIDAgMSAyMi44MjEtMTguNjg2bC4wODMuMDE2YTE5LjIxMSAxOS4yMTEgMCAwIDEgMTQuMzczIDExLjg0NSAxLjc1IDEuNzUgMCAwIDAgMi43NzQuNjc1IDE0LjY4NiAxNC42ODYgMCAwIDEgOS42MjMtMy42IDEuNzUgMS43NSAwIDAgMCAwLTMuNSAxOC4xODIgMTguMTgyIDAgMCAwIC0xMC4wODkgMy4wNjEgMjIuNjYgMjIuNjYgMCAwIDAgLTE0Ljk2NS0xMS43IDIwLjg0NiAyMC44NDYgMCAwIDAgLTM4LjU2NS00LjM1NCAxNi42NjMgMTYuNjYzIDAgMCAwIC0yNC41MzEgNy43IDExLjQ3MSAxMS40NzEgMCAwIDAgLjUzMiAyMi45MjkgMS43NSAxLjc1IDAgMSAwIDAtMy41IDcuOTcxIDcuOTcxIDAgMSAxIDAtMTUuOTQxYy4xNjggMCAuMzMzLjAxNC41NjMuMDNhMS43NDkgMS43NDkgMCAwIDAgMS44LTEuMjE5IDEzLjE1OSAxMy4xNTkgMCAwIDEgMjEuMTY2LTUuOTc3IDEuNzUgMS43NSAwIDAgMCAyLjc3My0uNjc0IDE3LjM0NyAxNy4zNDcgMCAwIDEgMzIuNDE0LjQzMmMtLjQ4Mi0uMDMtLjk2OC0uMDUtMS40NTctLjA1YTIyLjkzNiAyMi45MzYgMCAwIDAgLTIyLjczIDIwLjc4NSAxMi40NjggMTIuNDY4IDAgMCAwIDEuMzEgMjQuODY4aDY4LjIyMWExMi40NjggMTIuNDY4IDAgMSAwIDAtMjQuOTM2eiIvPjxwYXRoIGQ9Im0yOC4xMjUgNzEuOTg2aC00LjU0M2ExLjc1IDEuNzUgMCAwIDAgMCAzLjVoNC41NDNhMS43NSAxLjc1IDAgMCAwIDAtMy41eiIvPjwvZz48L2c+PC9zdmc+" alt ="cloud-img"/></div>
+          <div class="col-sm-4"></div>
         </div>
 
         
@@ -88,20 +95,24 @@
 </div>
 
 
-<div class="bottom-container">
+<div class="footer" id = "resume-page">
   <br>
   <div class="text-center">
     <a class="footer-link" href="https://github.com/Wong-S"><img class = "rounded" src ="https://www.flaticon.com/svg/vstatic/svg/2111/2111425.svg?token=exp=1614234145~hmac=d964aaaaefae4b4c92f1650ebda7f985"></a>
 
     <a href="http://www.linkedin.com/in/wong-s"><img class = "rounded" src="https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token=exp=1614234257~hmac=2edb9775705cfe050cb0f22da1150f50"></a>
 
-    <a href="/HTML-Personal-Site/contact-info.html"><img class = "rounded" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgLTU3NjIpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAiIHgyPSI1MTIiIHkxPSItNjAxOCIgeTI9Ii02MDE4Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzMWQ4ZmYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjgwZmYiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIGQ9Im01MTIgMjU2YzAgMTQxLjM4NjcxOS0xMTQuNjEzMjgxIDI1Ni0yNTYgMjU2cy0yNTYtMTE0LjYxMzI4MS0yNTYtMjU2IDExNC42MTMyODEtMjU2IDI1Ni0yNTYgMjU2IDExNC42MTMyODEgMjU2IDI1NnptMCAwIiBmaWxsPSJ1cmwoI2EpIi8+PHBhdGggZD0ibTQyOS41NzAzMTIgMTQzLjAxOTUzMWMtMS4wNzgxMjQtMS4yMzgyODEtMi4zMjQyMTgtMi4yNjk1MzEtMy42OTE0MDYtMy4wNzQyMTktNi4wMzkwNjItNC4zOTQ1MzEtMTMuNDY0ODQ0LTYuOTk2MDkzLTIxLjQ4ODI4MS02Ljk5NjA5M2gtMjk2Ljc4MTI1Yy04LjAxOTUzMSAwLTE1LjQ0MTQwNiAyLjYwMTU2Mi0yMS40ODA0NjkgNi45OTIxODctMS4zNzEwOTQuODA0Njg4LTIuNjIxMDk0IDEuODM1OTM4LTMuNzAzMTI1IDMuMDgyMDMyLTcuMDI3MzQzIDYuNjc1NzgxLTExLjQyNTc4MSAxNi4wOTc2NTYtMTEuNDI1NzgxIDI2LjUzNTE1NnYxNzIuODgyODEyYzAgMjAuMTg3NSAxNi40MjE4NzUgMzYuNjA5Mzc1IDM2LjYwOTM3NSAzNi42MDkzNzVoMjk2Ljc4MTI1YzIwLjE4NzUgMCAzNi42MDkzNzUtMTYuNDIxODc1IDM2LjYwOTM3NS0zNi42MDkzNzV2LTE3Mi44ODI4MTJjMC0xMC40Mzc1LTQuMzk4NDM4LTE5Ljg2MzI4Mi0xMS40Mjk2ODgtMjYuNTM5MDYzem0tNTUuMTMyODEyIDE5LjkyOTY4OC0xMTguNDM3NSA3NS4yNzczNDMtMTE4LjQzNzUtNzUuMjc3MzQzem0yOS45NTMxMjUgMTg2LjEwMTU2MmgtMjk2Ljc4MTI1Yy0zLjY0NDUzMSAwLTYuNjA5Mzc1LTIuOTY0ODQzLTYuNjA5Mzc1LTYuNjA5Mzc1di0xNjcuMTgzNTk0bDE0Ni45NTMxMjUgOTMuNDAyMzQ0YzIuNDU3MDMxIDEuNTU4NTk0IDUuMjUgMi4zMzk4NDQgOC4wNDY4NzUgMi4zMzk4NDRzNS41ODk4NDQtLjc4MTI1IDguMDQ2ODc1LTIuMzM5ODQ0bDE0Ni45NTMxMjUtOTMuNDAyMzQ0djE2Ny4xODM1OTRjMCAzLjY0NDUzMi0yLjk2NDg0NCA2LjYwOTM3NS02LjYwOTM3NSA2LjYwOTM3NXptMCAwIiBmaWxsPSIjZmZmIi8+PC9zdmc+" alt="contact-picture"></a>
+    <a href="contact-info.html"><img class = "rounded" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgLTU3NjIpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAiIHgyPSI1MTIiIHkxPSItNjAxOCIgeTI9Ii02MDE4Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzMWQ4ZmYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjgwZmYiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIGQ9Im01MTIgMjU2YzAgMTQxLjM4NjcxOS0xMTQuNjEzMjgxIDI1Ni0yNTYgMjU2cy0yNTYtMTE0LjYxMzI4MS0yNTYtMjU2IDExNC42MTMyODEtMjU2IDI1Ni0yNTYgMjU2IDExNC42MTMyODEgMjU2IDI1NnptMCAwIiBmaWxsPSJ1cmwoI2EpIi8+PHBhdGggZD0ibTQyOS41NzAzMTIgMTQzLjAxOTUzMWMtMS4wNzgxMjQtMS4yMzgyODEtMi4zMjQyMTgtMi4yNjk1MzEtMy42OTE0MDYtMy4wNzQyMTktNi4wMzkwNjItNC4zOTQ1MzEtMTMuNDY0ODQ0LTYuOTk2MDkzLTIxLjQ4ODI4MS02Ljk5NjA5M2gtMjk2Ljc4MTI1Yy04LjAxOTUzMSAwLTE1LjQ0MTQwNiAyLjYwMTU2Mi0yMS40ODA0NjkgNi45OTIxODctMS4zNzEwOTQuODA0Njg4LTIuNjIxMDk0IDEuODM1OTM4LTMuNzAzMTI1IDMuMDgyMDMyLTcuMDI3MzQzIDYuNjc1NzgxLTExLjQyNTc4MSAxNi4wOTc2NTYtMTEuNDI1NzgxIDI2LjUzNTE1NnYxNzIuODgyODEyYzAgMjAuMTg3NSAxNi40MjE4NzUgMzYuNjA5Mzc1IDM2LjYwOTM3NSAzNi42MDkzNzVoMjk2Ljc4MTI1YzIwLjE4NzUgMCAzNi42MDkzNzUtMTYuNDIxODc1IDM2LjYwOTM3NS0zNi42MDkzNzV2LTE3Mi44ODI4MTJjMC0xMC40Mzc1LTQuMzk4NDM4LTE5Ljg2MzI4Mi0xMS40Mjk2ODgtMjYuNTM5MDYzem0tNTUuMTMyODEyIDE5LjkyOTY4OC0xMTguNDM3NSA3NS4yNzczNDMtMTE4LjQzNzUtNzUuMjc3MzQzem0yOS45NTMxMjUgMTg2LjEwMTU2MmgtMjk2Ljc4MTI1Yy0zLjY0NDUzMSAwLTYuNjA5Mzc1LTIuOTY0ODQzLTYuNjA5Mzc1LTYuNjA5Mzc1di0xNjcuMTgzNTk0bDE0Ni45NTMxMjUgOTMuNDAyMzQ0YzIuNDU3MDMxIDEuNTU4NTk0IDUuMjUgMi4zMzk4NDQgOC4wNDY4NzUgMi4zMzk4NDRzNS41ODk4NDQtLjc4MTI1IDguMDQ2ODc1LTIuMzM5ODQ0bDE0Ni45NTMxMjUtOTMuNDAyMzQ0djE2Ny4xODM1OTRjMCAzLjY0NDUzMi0yLjk2NDg0NCA2LjYwOTM3NS02LjYwOTM3NSA2LjYwOTM3NXptMCAwIiBmaWxsPSIjZmZmIi8+PC9zdmc+" alt="contact-picture"></a>
 
 </div>
 <p id="copyright">© 2021 Sarah</p>
+<div id = "footer-freepik">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
 </div>
 
-        <div id = "footer-freepik">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-
+<!-- Additional scripts plus enables dropdown menu for bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>

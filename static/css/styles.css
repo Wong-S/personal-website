@@ -1,15 +1,20 @@
 body {
-  background-color: #eff7e1;
+  background-color: #f7f6e7;
   text-align: center;
   font-family: "Merriweather", serif;
   margin-bottom: 50px;
+}
+
+#homepage {
+  background-color: #aee1f9;
+  background-image: linear-gradient(315deg, #aee1f9 0%, #f6ebe6 74%);
 }
 
 hr {
   border-style: none;
   border-top-style: dotted;
   border-color: gray;
-  width: 5%;
+  width: 100%;
   border-width: 5px;
 }
 
@@ -18,30 +23,39 @@ hr {
   font-size: 100px;
   color: #f58634;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 p {
+  text-align: left;
+  font-family: "Merriweather";
+}
+
+#name-goal {
   text-align: center;
+  font-family: "Merriweather";
+}
+
+#hori-line {
+  text-align: center;
+}
+
+.container {
+  margin-top: 10px;
 }
 
 .navbar-brand {
-  font-family: "Cutive Mono";
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-link {
-  font-family: "Cutive Mono";
+  font-family: "Montserrat", sans-serif;
 }
 
 .rounded {
-  width: 3%;
+  width: 2%;
   text-align: center;
 }
-
-/* h1 {
-  color: #214151;
-  font-size: 20%;
-} */
 
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -58,12 +72,6 @@ h3 {
 
 .top-container {
   background-color: #eff7e1;
-}
-
-#profile-pic {
-  width: 120%;
-  height: 40%;
-  background-size: contain;
 }
 
 .project-pic {
@@ -92,9 +100,143 @@ h3 {
 }
 
 #footer-freepik {
+  text-align: center;
   font-size: small;
+  font-family: "Montserrat", sans-serif;
 }
 
 #copyright {
   font-size: small;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* style images  */
+
+#ot-graph {
+  width: auto;
+  height: 30%;
+}
+
+#pp-pizza {
+  width: auto;
+  height: 90%;
+}
+
+#wb-keyboard {
+  width: auto;
+  height: 30%;
+}
+
+#gt-todo {
+  width: auto;
+  height: 50%;
+}
+
+/* Styling Projects Page */
+#project-ot {
+  margin-top: 8px;
+  padding-bottom: 0;
+  height: 385px;
+}
+
+#project-pp {
+  margin-top: 60px;
+}
+
+#project-keys {
+  margin-top: 8px;
+  padding-bottom: 0;
+  height: 385px;
+}
+
+/* Footer area */
+#resume-page {
+  margin-top: 250px;
+}
+
+/* Title Pages */
+#about-me-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+#project-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+#ongoing-project-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+#resume-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+#contact-details-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ======================= */
+
+#resume-link-pdf {
+  font-family: "Montserrat", sans-serif;
+}
+
+label {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  background-color: #8ac4d0 !important;
+}
+
+/* index.html styles =========================*/
+
+#index-container {
+  /* background-color: blue; */
+}
+
+#index-row-container {
+  margin-top: -160px;
+}
+
+.cloud-1 {
+  height: 100%;
+  width: 65%;
+  margin-left: 550px;
+  padding-bottom: 0px;
+}
+
+.cloud-2 {
+  height: 100%;
+  width: 45%;
+  margin-left: -150px;
+  padding-bottom: 0px;
+  margin-top: -30px;
+}
+
+/* about.html styles =========================*/
+
+#about-summary {
+  margin-top: 8px;
+}
+
+#profile-pic {
+  width: 120%;
+  height: 40%;
+  background-size: contain;
+  margin-top: 8px;
+}
+
+/* resume.html styles =========================*/
+
+#resume-summary {
+  margin-top: 8px;
+}
+
+/* contact-info.html styles =========================*/
+
+#contact-summary {
+  margin-top: 8px;
 }

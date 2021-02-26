@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset = "utf-8">
-        <title>Sarah Wong</title>
+        <title>My Projects</title>
 
         <link rel="stylesheet" href="static/css/styles.css">
         <link rel="icon" href="static/img/favicon.ico">
@@ -24,7 +24,7 @@
 
       
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/HTML-Personal-Site/about.html">Sarah Wong</a>
+  <a class="navbar-brand" href="about.html">Sarah Wong</a>
   
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,26 +36,21 @@
 
         <div id = "top-nav-bar">
           <li class="nav-item active">
-            <a class="nav-link" href="/HTML-Personal-Site/index.html">Home •</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
         </div>
         <li class="nav-item active">
-          <a class="nav-link" href="/HTML-Personal-Site/about.html">About •</a>
+          <a class="nav-link" href="about.html">About</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/HTML-Personal-Site/projects.html">Projects •</a>
+          <a class="nav-link" href="projects.html">Projects</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/HTML-Personal-Site/resume.html">Resume •</a>
+          <a class="nav-link" href="resume.html">Resume</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="/video-playlist/{{user_id}}">Playlist/Videos</a>
-        </li> -->
+
         <li class="nav-item active">
-            <a class="nav-link " href="/HTML-Personal-Site/contact-info.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Contact
-            </a>
-  
+          <a class="nav-link" href="contact-info.html">Contact</a>
         </li>
 
 
@@ -65,8 +60,7 @@
 </nav>
 
 
-        <div>
-        </div>
+
         
 
       
@@ -77,9 +71,14 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-sm-8"><h1>Projects</h1></div>
+ 
+          <div class="col-sm-8"><h1 id="project-title">Projects</h1></div>
+
+          <hr>
          
         </div>
+      </div>
+        <div class="container" id = "project-ot">
         <div class="row">
             <div class="col-sm-8"><h3><a href = "https://github.com/Wong-S/sleep-project">Optium Time</a></h3></div>
             
@@ -89,19 +88,29 @@
                 <p><em>Project Description:</em></p>
                 <p>A full-stack Python Flask web application created during a 5-week period for my capstone project at Hackbright Academy. This app allows the user to wind down before bed by journaling and setting a Moment.js alarm clock. The user also sees a graphical display of their  logged total hours slept per week/month  and NREM/REM stages using Chart.js. The Youtube Data API allows the user to query and search for videos with specific ambient sounds to act as an aide for their sleep routine. The user can use the app’s Twilio API feature to notify the user’s total sleep cycles from that night.</p>
           
-                <p><em>Tech Stack:</em></p>
-                <p>Python, PostgreSQL, Javascript, Flask, HTML, CSS, AJAX, Bootstrap, Charts.js, Moment.js</p>
-                <p><em>APIs:</em></p>
-                <p>Youtube Data API, Twilio API</p></div>
+                <p><em>Tech Stack:</em> Python, PostgreSQL, Javascript, Flask, HTML, CSS, AJAX, Bootstrap, Charts.js, Moment.js</p>
+                
+                <p><em>APIs:</em> Youtube Data API, Twilio API</p>
 
-            <div class="col-sm-4">col-sm-4</div>
+                <p><em>Demo Video Link:</em> <a href = "https://youtu.be/VyUbjDODRSQ">Youtube Link Here</a></p>
+
+                </div>
+
+            <div class="col-sm-4">
+
+            
+              <img id="ot-graph" src="graphs.png">
+
+
+            </div>
           </div>
       </div>
+      
 
 
 
-      <div class="container">
-
+      <div class="container" id="project-pp">
+        <hr>
         <div class="row">
             <div class="col-sm-8"><h3><a href = "https://github.com/Wong-S/pizza-project">Picasso's Pizzeria</a></h3></div>
             
@@ -110,38 +119,59 @@
             <div class="col-sm-8">
                 
       <p><em>Project Description:</em></p>
-      <p>A build-your-own terminal-based pizza game created within a two week period. Winner of the Hackbright's Phenomenal Woman Scholarship in Fall 2020. The story and animation was created using Python 3 and Turtle enhanced graphics.</p>
+      <p>Winner of the Hackbright's Phenomenal Woman Scholarship in Fall 2020. This is a build-your-own terminal-based pizza game created within a two week period. The story and animation was created using Python 3 and Turtle enhanced graphics. The user can select topping items from a formatted menu, as well as add, edit, and delete topping selections before checking out to pay.</p>
 
-      <p><em>Tech Stack:</em></p>
-      <p>Python, Turtle graphics</p></div>
+      <p><em>Tech Stack:</em> Python, Turtle graphics</p>
+
+      <p><em>Demo Link:</em> <a href = "https://repl.it/@sw135/Project-Pizza#main.py">Repl.it Link Here</a></p>
+    </div>
                 
-        <div class="col-sm-4">col-sm-4</div>
+        <div class="col-sm-4">
+
+          <img id = "pp-pizza" src="pizza-1.png">
+          
+          
+
+        </div>
           
       </div>
       
       
     </div>
 
-  <hr>
+
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-8"><h1>Ongoing Projects</h1></div>
+      
+    <hr>
+      <div class="col-sm-8"><h1 id="ongoing-project-title">Ongoing Projects</h1></div>
      
     </div>
+</div>
+    <div class="container" id="project-keys">
     <div class="row">
+        <hr>
         <div class="col-sm-8"><h3><a href = "https://github.com/Wong-S/mintbean-Goals-Project">Web Beats</a></h3></div>
         
       </div>
     <div class="row">
         <div class="col-sm-8">
             <p><em>Project Description:</em></p>
-            <p>A collaborative project with <span><a href="https://www.linkedin.com/in/ashley-kwan08/" target="_blank">Ashley Kwan</a></span> and <span><a href="www.linkedin.com/in/hannah-stojack" target="_blank">Hannah Stojack.</a></span> Created during Mintbean.io Febuary 2021 hackathon to learn Tone.js. The project's goal was to create a fun and musical keyboard that would allow the user to be creative composer. Using Javascript and Tone.js, the keyboard is currently being added a record feature, as well as additional instruments for the user to mix and match their beats to.</p>
+            <p>A collaborative team project that was created during Mintbean.io Febuary 2021 hackathon to learn Tone.js. The project's goal was to create a fun and musical keyboard that would allow the user to be a creative composer. Using Javascript and Tone.js, the keyboard is currently being added a record feature, as well as additional instruments for the user to mix and match their musical beats.</p>
           
-            <p><em>Tech Stack:</em></p>
-            <p>Javascript, Tone.js, HTML, CSS, Bootstrap4</p></div>
+            <p><em>Tech Stack:</em> Javascript, Tone.js, HTML, CSS, Bootstrap4</p>
 
-        <div class="col-sm-4">col-sm-4</div>
+            <p><em>Demo Link:</em> <a href = "https://ashleykwan8.github.io/MintBean-WebBeats/">Link Here (Testing in Progress)</a></p>
+           
+            
+          </div>
+
+        <div class="col-sm-4">
+
+          <img id="wb-keyboard" src="keyboard.png">
+
+        </div>
       </div>
   </div>
 
@@ -150,18 +180,23 @@
   <div class="container">
 
     <div class="row">
+        <hr>
         <div class="col-sm-8">   <h3><a href = "https://github.com/Wong-S/mintbean-Goals-Project">Goal Tracker App</a></h3></div>
         
       </div>
     <div class="row">
         <div class="col-sm-8">
             <p><em>Project Description:</em></p>
-            <p>A collaborative project with <span><a href="https://www.linkedin.com/in/ashley-kwan08/" target="_blank">Ashley Kwan</a></span> and <span><a href="www.linkedin.com/in/hannah-stojack" target="_blank">Hannah Stojack.</a></span> Created during Mintbean.io January 2021 hackathon to learn and gain exposure to React.js. The project's purpose was to help users add, edit, and delete tasks throughout the day using vanilla Javascript event handlers and create-react-app.</p>
+            <p>A collaborative team project that was created during Mintbean.io January 2021 hackathon to learn and gain exposure to React.js. The project's purpose was to help users add, edit, and delete tasks throughout the day using vanilla Javascript event handlers and React.js. Additional features currently in progress include a search feature utilizing hashtags and regular expressions, as well as a time feature for the user to set when they want tasks to be completed.</p>
           
-            <p><em>Tech Stack:</em></p>
-            <p>Javascript, React.js, HTML, CSS</p></div>
+            <p><em>Tech Stack:</em> Javascript, React.js, HTML, CSS</p>
+           </div>
 
-        <div class="col-sm-4">col-sm-4</div>
+        <div class="col-sm-4">
+
+
+          <img id="gt-todo" src="https://media.giphy.com/media/vt5n3BjIIdwxnbKbd7/giphy.gif" alt="gif-video">
+        </div>
       </div>
   </div>
 
@@ -173,25 +208,29 @@
 
 
 
-  <hr>
+  
   
 
 
 
-<div class="bottom-container">
-  <br>
-  <div class="text-center">
-    <a class="footer-link" href="https://github.com/Wong-S"><img class = "rounded" src ="https://www.flaticon.com/svg/vstatic/svg/2111/2111425.svg?token=exp=1614234145~hmac=d964aaaaefae4b4c92f1650ebda7f985"></a>
+    <div class="footer" id = "resume-page">
+      <br>
+      <div class="text-center">
+        <a class="footer-link" href="https://github.com/Wong-S"><img class = "rounded" src ="https://www.flaticon.com/svg/vstatic/svg/2111/2111425.svg?token=exp=1614234145~hmac=d964aaaaefae4b4c92f1650ebda7f985"></a>
+    
+        <a href="http://www.linkedin.com/in/wong-s"><img class = "rounded" src="https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token=exp=1614234257~hmac=2edb9775705cfe050cb0f22da1150f50"></a>
+    
+        <a href="contact-info.html"><img class = "rounded" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgLTU3NjIpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAiIHgyPSI1MTIiIHkxPSItNjAxOCIgeTI9Ii02MDE4Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzMWQ4ZmYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjgwZmYiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIGQ9Im01MTIgMjU2YzAgMTQxLjM4NjcxOS0xMTQuNjEzMjgxIDI1Ni0yNTYgMjU2cy0yNTYtMTE0LjYxMzI4MS0yNTYtMjU2IDExNC42MTMyODEtMjU2IDI1Ni0yNTYgMjU2IDExNC42MTMyODEgMjU2IDI1NnptMCAwIiBmaWxsPSJ1cmwoI2EpIi8+PHBhdGggZD0ibTQyOS41NzAzMTIgMTQzLjAxOTUzMWMtMS4wNzgxMjQtMS4yMzgyODEtMi4zMjQyMTgtMi4yNjk1MzEtMy42OTE0MDYtMy4wNzQyMTktNi4wMzkwNjItNC4zOTQ1MzEtMTMuNDY0ODQ0LTYuOTk2MDkzLTIxLjQ4ODI4MS02Ljk5NjA5M2gtMjk2Ljc4MTI1Yy04LjAxOTUzMSAwLTE1LjQ0MTQwNiAyLjYwMTU2Mi0yMS40ODA0NjkgNi45OTIxODctMS4zNzEwOTQuODA0Njg4LTIuNjIxMDk0IDEuODM1OTM4LTMuNzAzMTI1IDMuMDgyMDMyLTcuMDI3MzQzIDYuNjc1NzgxLTExLjQyNTc4MSAxNi4wOTc2NTYtMTEuNDI1NzgxIDI2LjUzNTE1NnYxNzIuODgyODEyYzAgMjAuMTg3NSAxNi40MjE4NzUgMzYuNjA5Mzc1IDM2LjYwOTM3NSAzNi42MDkzNzVoMjk2Ljc4MTI1YzIwLjE4NzUgMCAzNi42MDkzNzUtMTYuNDIxODc1IDM2LjYwOTM3NS0zNi42MDkzNzV2LTE3Mi44ODI4MTJjMC0xMC40Mzc1LTQuMzk4NDM4LTE5Ljg2MzI4Mi0xMS40Mjk2ODgtMjYuNTM5MDYzem0tNTUuMTMyODEyIDE5LjkyOTY4OC0xMTguNDM3NSA3NS4yNzczNDMtMTE4LjQzNzUtNzUuMjc3MzQzem0yOS45NTMxMjUgMTg2LjEwMTU2MmgtMjk2Ljc4MTI1Yy0zLjY0NDUzMSAwLTYuNjA5Mzc1LTIuOTY0ODQzLTYuNjA5Mzc1LTYuNjA5Mzc1di0xNjcuMTgzNTk0bDE0Ni45NTMxMjUgOTMuNDAyMzQ0YzIuNDU3MDMxIDEuNTU4NTk0IDUuMjUgMi4zMzk4NDQgOC4wNDY4NzUgMi4zMzk4NDRzNS41ODk4NDQtLjc4MTI1IDguMDQ2ODc1LTIuMzM5ODQ0bDE0Ni45NTMxMjUtOTMuNDAyMzQ0djE2Ny4xODM1OTRjMCAzLjY0NDUzMi0yLjk2NDg0NCA2LjYwOTM3NS02LjYwOTM3NSA2LjYwOTM3NXptMCAwIiBmaWxsPSIjZmZmIi8+PC9zdmc+" alt="contact-picture"></a>
+    
+    </div>
+    <p id="copyright">© 2021 Sarah</p>
+    <div id = "footer-freepik">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    
+    </div>
 
-    <a href="http://www.linkedin.com/in/wong-s"><img class = "rounded" src="https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token=exp=1614234257~hmac=2edb9775705cfe050cb0f22da1150f50"></a>
-
-    <a href="/HTML-Personal-Site/contact-info.html"><img class = "rounded" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGxpbmVhckdyYWRpZW50IGlkPSJhIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgLTU3NjIpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAiIHgyPSI1MTIiIHkxPSItNjAxOCIgeTI9Ii02MDE4Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzMWQ4ZmYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjgwZmYiLz48L2xpbmVhckdyYWRpZW50PjxwYXRoIGQ9Im01MTIgMjU2YzAgMTQxLjM4NjcxOS0xMTQuNjEzMjgxIDI1Ni0yNTYgMjU2cy0yNTYtMTE0LjYxMzI4MS0yNTYtMjU2IDExNC42MTMyODEtMjU2IDI1Ni0yNTYgMjU2IDExNC42MTMyODEgMjU2IDI1NnptMCAwIiBmaWxsPSJ1cmwoI2EpIi8+PHBhdGggZD0ibTQyOS41NzAzMTIgMTQzLjAxOTUzMWMtMS4wNzgxMjQtMS4yMzgyODEtMi4zMjQyMTgtMi4yNjk1MzEtMy42OTE0MDYtMy4wNzQyMTktNi4wMzkwNjItNC4zOTQ1MzEtMTMuNDY0ODQ0LTYuOTk2MDkzLTIxLjQ4ODI4MS02Ljk5NjA5M2gtMjk2Ljc4MTI1Yy04LjAxOTUzMSAwLTE1LjQ0MTQwNiAyLjYwMTU2Mi0yMS40ODA0NjkgNi45OTIxODctMS4zNzEwOTQuODA0Njg4LTIuNjIxMDk0IDEuODM1OTM4LTMuNzAzMTI1IDMuMDgyMDMyLTcuMDI3MzQzIDYuNjc1NzgxLTExLjQyNTc4MSAxNi4wOTc2NTYtMTEuNDI1NzgxIDI2LjUzNTE1NnYxNzIuODgyODEyYzAgMjAuMTg3NSAxNi40MjE4NzUgMzYuNjA5Mzc1IDM2LjYwOTM3NSAzNi42MDkzNzVoMjk2Ljc4MTI1YzIwLjE4NzUgMCAzNi42MDkzNzUtMTYuNDIxODc1IDM2LjYwOTM3NS0zNi42MDkzNzV2LTE3Mi44ODI4MTJjMC0xMC40Mzc1LTQuMzk4NDM4LTE5Ljg2MzI4Mi0xMS40Mjk2ODgtMjYuNTM5MDYzem0tNTUuMTMyODEyIDE5LjkyOTY4OC0xMTguNDM3NSA3NS4yNzczNDMtMTE4LjQzNzUtNzUuMjc3MzQzem0yOS45NTMxMjUgMTg2LjEwMTU2MmgtMjk2Ljc4MTI1Yy0zLjY0NDUzMSAwLTYuNjA5Mzc1LTIuOTY0ODQzLTYuNjA5Mzc1LTYuNjA5Mzc1di0xNjcuMTgzNTk0bDE0Ni45NTMxMjUgOTMuNDAyMzQ0YzIuNDU3MDMxIDEuNTU4NTk0IDUuMjUgMi4zMzk4NDQgOC4wNDY4NzUgMi4zMzk4NDRzNS41ODk4NDQtLjc4MTI1IDguMDQ2ODc1LTIuMzM5ODQ0bDE0Ni45NTMxMjUtOTMuNDAyMzQ0djE2Ny4xODM1OTRjMCAzLjY0NDUzMi0yLjk2NDg0NCA2LjYwOTM3NS02LjYwOTM3NSA2LjYwOTM3NXptMCAwIiBmaWxsPSIjZmZmIi8+PC9zdmc+" alt="contact-picture"></a>
-
-</div>
-<p id="copyright">© 2021 Sarah</p>
-</div>
-
-<div id = "footer-freepik">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-
+<!-- Additional scripts plus enables dropdown menu for bootstrap -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
